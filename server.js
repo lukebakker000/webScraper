@@ -15,7 +15,7 @@ app.get('/scrapedPage', function(req, res){
 		if(!error){
 			//What we are looking for
 			var $ = cheerio.load(html)
-			var title, release, rating
+			var title
 			var json = {title: ""}
 			//DOM html names eg. #, ., <>
 			$('#hplogo').filter(function(){
